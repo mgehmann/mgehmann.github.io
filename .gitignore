@@ -46,3 +46,27 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Quarto build output - regenerated on every render, so committing it just
+# creates merge conflicts in files nobody reads
+
+/.quarto/
+/_book/
+*_files/
+
+# Credentials, wider than the template's two lines. The example file is
+# tracked on purpose: it documents the variable names without ever
+# carrying the values
+
+!.Renviron.example
+*.pem
+*.key
+*_api_key*
+credentials.json
+.aws/
+
+# Operating system noise - not in the R template, it lives in GitHub's 
+# separate macOS and Windows ones
+
+.DS_Store
+Thumbs.db
